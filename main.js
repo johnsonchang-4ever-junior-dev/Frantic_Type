@@ -11,11 +11,11 @@ const lftIndex = [
     "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
      "ronze", "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", "traitor", 
   "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traditional", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
-  "tramp", "trample", "trance", "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "trapped",
+   "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", 
    "trash", "trauma",  "traverse",  "treasure", "treasury", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", 
    "tribute", "trick", "tricky", "trickle", "tried",  "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
-   "trivial", "troop", "trooper", "trophy", "tropic", "tropical", "trot", "trouble", "trousers", "trout", "truce", "trudge", "true", "truly", "trump", 
-   "trumpet", "trunk", "trust", "trusted", "trusty", "truth", "truthful", "behalf", "softball", "breakfast",  "doubt", "doubtful", "obtain", "subtract"
+   "trivial", "troop", "trooper", "trophy", "tropical", "trouble", "trousers", "true", "truly", 
+    "trunk", "trust", "trusted", "trusty", "truth",  "breakfast",  "doubt", "doubtful", "obtain", "subtract"
 ];
 
 const lftMiddle_1 = [ 
