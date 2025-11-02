@@ -1,21 +1,21 @@
 // Word lists (same as your document)
 const lftIndex = [
-  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", 
+  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", 
   "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", 
   "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful", "after", "afternoon", "afterward", "aircraft", "craft", "crafted", "draft",
    "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
    "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate", "celebrated",  "cerebral", "disturb", "embraced", "fiber", "harbor",
-    "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor", "neighborhood", "number", "october", "orbit", "remember", "remembered", 
+    "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
     "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
     "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
     "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
      "ronze", "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", "traitor", 
-  "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traditional", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
-   "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", 
+  "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
+   "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "collect", 
    "trash", "trauma",  "traverse",  "treasure", "treasury", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", 
    "tribute", "trick", "tricky", "trickle", "tried",  "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
    "trivial", "troop", "trooper", "trophy", "tropical", "trouble", "trousers", "true", "truly", 
-    "trunk", "trust", "trusted", "trusty", "truth",  "breakfast",  "doubt", "doubtful", "obtain", "subtract"
+    "trunk", "trust", "trusted", "trusty", "truth",  "breakfast",  "doubt",  "obtain", "subtract"
 ];
 
 const lftMiddle_1 = [ 
@@ -28,24 +28,24 @@ const lftMiddle_1 = [
   "merged","mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
   "protected","published","punched","raised","realized","recognized","referred","reflected","refused", "regretted","related","relaxed","rendered",
   "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","stretched","struck","submitted","succeeded",
-  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","treated",
+  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","treated", "tree", 
   "treed","tried","triggered","trimmed","troubled", "trusted","uncovered","united","urged","waved","zoned" 
 ];
 
 const lftMiddle_2 = [
   "decade","decay","decent","decide","decision","declare","declared","decor","decrease","dedicate","dedicated","deduce",
-  "deduct","defeat","defeated","defend","defense","defensive","defer","define","definite","definitely","definition",
-  "degree","delay","delete","deliberate","delicate","deliver","delivered","delivery",
-  "demanded","democracy","democratic","demonstrate","demonstrated","denial","dense","dental","dentist","deny",
+  "deduct","defeat", "defend","defense","defensive","defer","define","definite","definitely","definition",
+  "degree","delay","delete","deliberate","delicate","deliver", "delivery",
+  "demanded","democracy","democratic","demonstrate","denial","dense","dental","dentist","deny",
   "depart","departed","department","departure","depend","dependent","depending","depict","deployed","deposit",
   "depth","deputy","derived","descend","descended","description","desert",
   "deserted","deserve","deserved","designer","desirable","desire","desired","desk","despair",
-  "desperate","despite","dessert","destination","destiny","destroy","detail",
+  "desperate","despite","dessert","destiny","destroy","detail",
   "detect","detected","detective","determine","determined","develop","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medical",
-  "medicin","predicted","syndicate","access","ancestor","cell","cellar","cement","cemetery",
+  "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
   "census","central","century","ceremony","certain","certificate","ceases","ceased",
   "celebrated","celebrity","concert","eclipse","excel",
-  "excellent","except","exception","excess","excessive","grocery","necessaries","necessary","necessity",
+  "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
   "ocean","precede","preceded","precedent","precious","precise","precisely","recent",
   "reception","recipe","receipt","receive","received","receiver"
 ];
@@ -57,10 +57,10 @@ const lftRing = [
 
 const rightIndex = [
   "anyhow", "anymore", "anyone", "anytime",  "but", "neighborhood", "parenthood","object", 
-  "inherent", "inherit", "technique", "technology", "unhinged",
-   "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify",
-  "judgment",
-  "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "columnist", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor", "humorous", "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurl", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "plump", "premium", "pump", "pumped", "resume", "resumed",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "tumult", "vacuum", "volume", "yummy"
+  "inherent", "inherit", "technique", "technology", "unhinged", "by", "ruby", "hierarchy", 
+   "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", 
+  "judgment", "nurture", "union", 
+  "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurl", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "plump", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
 
 const rightMiddle = [
@@ -68,7 +68,7 @@ const rightMiddle = [
 ];
 
 const rightRing = [
-  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold", "holding", "mold", "old", "oldest", "scolded", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "cloth", "clothe", "clothes", "color", "colored", "colorful",  "deploy", "deployed", "dialogue", "dollar", "ecology", "employee", "explore", "explorer", "flour", "flourish", "follow", "geology", "glorious", "globe", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded",  "lobby", "local", "located", "locker",  "logic", "logical",  "lollipop", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosen", "lord", "lottery", "loudly", "lounge", "loyal", "loyalty", "parole", "patrol", "pillow", "plotted", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slowly", "solo", "technology", "theology", "yellow", "zoology"
+  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold", "holding", "mold", "old", "oldest", "scolded", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "cloth", "clothe", "clothes", "color", "colored", "colorful",  "deploy", "deployed", "dialogue", "dollar", "ecology", "employee", "explore", "explorer", "flour", "flourish", "follow", "geology", "glorious", "globe", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded",  "lobby", "local", "located", "locker",  "logic", "logical",  "lollipop", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosen", "lord", "lottery", "loudly", "lounge", "loyal", "loyalty", "patrol", "pillow", "plotted", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slowly", "solo", "technology", "theology", "yellow", "zoology"
 ];
 
 const farReached = [ 
