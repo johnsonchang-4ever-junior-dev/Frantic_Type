@@ -1,12 +1,21 @@
 // Word lists (same as your document)
 const lftIndex = [
-  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful",
-  "after", "afternoon", "afterward", "aircraft", "craft", "crafted", "draft", "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", "thrifty", "target",
-  "absorb", "arbitrary", "barber", "barbecue", "celebrate", "celebrated",  "cerebral", "disturb", "embraced", "fiber", "harbor", "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor", "neighborhood", "number", "october", "orbit", "remember", "remembered", "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally",
-  "brace", "bracket", "brag", "braid", "brain", "brainy", "brake", "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", "broke", "broken", "bronze", "brook", "broom", "brother", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal",
-  "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traditional", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait", "traitor", "tramp", "trample", "trance", "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "trapped", "trash", "trauma",  "traverse", "tray", "tread", "treasure", "treasury", "treat", "treaty", "treble", "trek", "tremble", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", "tribute", "trick", "tricky", "trickle", "tried",  "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", "trivial", "troop", "trooper", "trophy", "tropic", "tropical", "trot", "trouble", "trousers", "trout", "truce", "trudge", "true", "truly", "trump", "trumpet", "trunk", "trust", "trusted", "trusty", "truth", "truthful",
-   "behalf", "softball", "breakfast",
-  "basketball", "football", "doubt", "doubtful", "obtain", "obtained", "subtract"
+  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", 
+  "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", 
+  "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful", "after", "afternoon", "afterward", "aircraft", "craft", "crafted", "draft",
+   "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
+   "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate", "celebrated",  "cerebral", "disturb", "embraced", "fiber", "harbor",
+    "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor", "neighborhood", "number", "october", "orbit", "remember", "remembered", 
+    "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag", "braid", "brain", "brainy", "brake", 
+    "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
+    "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
+     "ronze", "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", "traitor", 
+  "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traditional", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
+  "tramp", "trample", "trance", "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "trapped",
+   "trash", "trauma",  "traverse",  "treasure", "treasury", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", 
+   "tribute", "trick", "tricky", "trickle", "tried",  "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
+   "trivial", "troop", "trooper", "trophy", "tropic", "tropical", "trot", "trouble", "trousers", "trout", "truce", "trudge", "true", "truly", "trump", 
+   "trumpet", "trunk", "trust", "trusted", "trusty", "truth", "truthful", "behalf", "softball", "breakfast",  "doubt", "doubtful", "obtain", "subtract"
 ];
 
 const lftMiddle_1 = [ 
@@ -59,11 +68,11 @@ const rightMiddle = [
 ];
 
 const rightRing = [
-  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold",  "holding", "mold", "old",  "oldest", "scolded", "sold", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "blonde", "blood", "bloody", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "close", "closed", "closest", "closet", "closure", "cloth", "clothe", "clothes", "clothing", "cloud", "cloudy", "color", "colored", "colorful", "colony", "deploy", "deployed", "dialogue", "dollar", "ecology",  "employee", "employer", "employment", "explore",  "explorer", , "fellow", "fellowship", "flop", "floor", "flour", "flourish", "flow", "flower", "follow",  "geology", "glow", "glove", "glory", "glorious", "globe", "global", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded", "loaf", "loan", "lobby", "local", "located", "locker", "lodge",  "logic", "logical", "logo", "lollipop", "lone", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosely", "loosen", "lord", "lottery", "loud", "loudly", "lounge", "loyal", "loyalty", "melon", "parole", "patrol", "pillow", "plotted", "plow", "polo", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot",  "slowly", "solo", "technology", "theology", "yellow", "zoology"
+  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold",  "holding", "mold", "old",  "oldest", "scolded",  "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "blonde", "blood", "bloody", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "close", "closed", "closest", "closet", "closure", "cloth", "clothe", "clothes", "clothing", "cloud", "cloudy", "color", "colored", "colorful", "colony", "deploy", "deployed", "dialogue", "dollar", "ecology",  "employee", "employer", "employment", "explore",  "explorer", , "fellow", "fellowship", "flop", "floor", "flour", "flourish", "flow", "flower", "follow",  "geology", "glow", "glove", "glory", "glorious", "globe", "global", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded", "loaf", "loan", "lobby", "local", "located", "locker", "lodge",  "logic", "logical", "logo", "lollipop", "lone", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosely", "loosen", "lord", "lottery", "loud", "loudly", "lounge", "loyal", "loyalty", "melon", "parole", "patrol", "pillow", "plotted", "plow", "polo", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot",  "slowly", "solo", "technology", "theology", "yellow", "zoology"
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equipped",\
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equipped"
 ]
 
 let joined_list = [];
@@ -140,8 +149,8 @@ function getRandomWord() {
 
 function generateWords() {
     generatedWords = [];
-    // Generate 360 words initially so there's always content
-    for (let i = 0; i < 360; i++) {
+    // Generate 300 words initially so there's always content
+    for (let i = 0; i < 300; i++) {
         generatedWords.push(getRandomWord());
     }
     displayWords();
