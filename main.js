@@ -58,7 +58,7 @@ const lftRing = [
 const rightIndex = [
   "anyhow", "anymore", "anyone", "anytime",  "but", "neighborhood", "parenthood","object", 
   "inherent", "inherit", "technique", "technology", "unhinged", "by", "ruby", "hierarchy", 
-   "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", 
+   "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", 
   "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurl", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "plump", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
