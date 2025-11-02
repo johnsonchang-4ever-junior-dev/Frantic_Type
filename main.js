@@ -6,7 +6,7 @@ const lftIndex = [
    "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
    "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate", "celebrated",  "cerebral", "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor", "neighborhood", "number", "october", "orbit", "remember", "remembered", 
-    "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag", "braid", "brain", "brainy", "brake", 
+    "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
     "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
     "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
      "ronze", "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", "traitor", 
@@ -19,7 +19,7 @@ const lftIndex = [
 ];
 
 const lftMiddle_1 = [ 
-  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed","bred", "burned","cared","caused",
+  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed", "burned","cared","caused",
   "charged","cleared","coded","colored","complained","composed","continued", "copied","covered","created","credited","crossed","curved",
   "decided","declined","decreased","deed","defined","denied","depended","described","destroyed","differed","directed","discussed","dropped",
   "edited","ended","enjoyed","equipped","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
@@ -28,25 +28,25 @@ const lftMiddle_1 = [
   "merged","mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
   "protected","published","punched","raised","realized","recognized","referred","reflected","refused", "regretted","related","relaxed","rendered",
   "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","stretched","struck","submitted","succeeded",
-  "supported","surrounded","swallowed","switched","taxed","transferred", "transformed","translated","transported","trapped","traveled","treated",
+  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","treated",
   "treed","tried","triggered","trimmed","troubled", "trusted","uncovered","united","urged","waved","zoned" 
 ];
 
 const lftMiddle_2 = [
   "decade","decay","decent","decide","decision","declare","declared","decor","decrease","dedicate","dedicated","deduce",
   "deduct","defeat","defeated","defend","defense","defensive","defer","define","definite","definitely","definition",
-  "degree","delay","delete","deliberate","deliberately","delicate","deliver","delivered","delivery",
+  "degree","delay","delete","deliberate","delicate","deliver","delivered","delivery",
   "demanded","democracy","democratic","demonstrate","demonstrated","denial","dense","dental","dentist","deny",
   "depart","departed","department","departure","depend","dependent","depending","depict","deployed","deposit",
   "depth","deputy","derived","descend","descended","description","desert",
   "deserted","deserve","deserved","designer","desirable","desire","desired","desk","despair",
-  "desperate","desperately","despite","dessert","destination","destiny","destroy","detail",
+  "desperate","despite","dessert","destination","destiny","destroy","detail",
   "detect","detected","detective","determine","determined","develop","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cellar","cement","cemetery",
-  "census","central","century","ceremony","certain","certainly","certificate","ceases","ceased",
+  "census","central","century","ceremony","certain","certificate","ceases","ceased",
   "celebrated","celebrity","concert","eclipse","excel",
-  "excellent","except","exception","excess","excessive","grocery","necessaries","necessary","necessity","nice","nicely",
-  "ocean","precede","preceded","precedent","precious","precise","precisely","recent","recently",
+  "excellent","except","exception","excess","excessive","grocery","necessaries","necessary","necessity",
+  "ocean","precede","preceded","precedent","precious","precise","precisely","recent",
   "reception","recipe","receipt","receive","received","receiver"
 ];
 
@@ -64,11 +64,11 @@ const rightIndex = [
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "liked", "likely", "likewise", "liking", "mike", "nickname", "pike", "spike", "strike", "striking", "trike", "unlike",
+  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "strike", "striking", "trike", "unlike",
 ];
 
 const rightRing = [
-  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold", "holding", "mold", "old", "oldest", "scolded", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "blonde", "blood", "bloody", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "close", "closed", "closest", "closet", "closure", "cloth", "clothe", "clothes", "clothing", "cloud", "cloudy", "color", "colored", "colorful", "colony", "deploy", "deployed", "dialogue", "dollar", "ecology", "employee", "employer", "employment", "explore", "explorer", "fellow", "fellowship", "flop", "floor", "flour", "flourish", "flow", "flower", "follow", "geology", "glow", "glove", "glory", "glorious", "globe", "global", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded", "loaf", "loan", "lobby", "local", "located", "locker", "lodge", "logic", "logical", "logo", "lollipop", "lone", "lonely", "loneliness", "long", "longest", "longing", "loop", "loosely", "loosen", "lord", "lottery", "loud", "loudly", "lounge", "loyal", "loyalty", "melon", "parole", "patrol", "pillow", "plotted", "plow", "polo", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slowly", "solo", "technology", "theology", "yellow", "zoology"
+  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold", "holding", "mold", "old", "oldest", "scolded", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "cloth", "clothe", "clothes", "color", "colored", "colorful",  "deploy", "deployed", "dialogue", "dollar", "ecology", "employee", "employer", "employment", "explore", "explorer", "flour", "flourish", "follow", "geology", "glorious", "globe", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded",  "lobby", "local", "located", "locker",  "logic", "logical",  "lollipop", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosen", "lord", "lottery", "loudly", "lounge", "loyal", "loyalty", "parole", "patrol", "pillow", "plotted", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slowly", "solo", "technology", "theology", "yellow", "zoology"
 ];
 
 const farReached = [ 
