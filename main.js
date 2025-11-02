@@ -1,104 +1,78 @@
-// Adjacent same-finger bigrams for LEFT INDEX
-// Includes: rf/fr, ft/tf, fv/vf, tg/gt, rb/br, fb/bf, tb/bt, gb/bg, rv/vr, tv/vt
- const lftIndex = [
-  // Common rf/fr words
-  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", "shaft", "sheriff", "surf", "surface", "surfer", "surfing", "turf", "warfare", "waterfall", "wonderful",
-  // Common ft/tf words
-  "after", "afternoon", "afterward", "aircraft", "craft", "crafted", "daft", "deft", "draft", "drafted", "drift", "drifted", "gift", "heft", "left", "leftover", "lift", "loft", "lofty", "oft", "often", "raft", "rafted", "shaft", "shift", "shifted", "sift", "soft", "soften", "softly", "software", "swift", "swiftly", "theft", "thrift", "thrifty", "tuft",
-  // Common tg/gt words
-  "target",
-  // Common rb/br words
-  "absorb", "arbitrary", "barber", "barbecue", "celebrate", "celebrated", "celebration", "cerebral", "disturb", "embraced", "fiber", "harbor", "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor", "neighborhood", "number", "October", "orbit", "remember", "remembered", "rubber", "September", "suburb", "suburban", "timber", "tribe", "urban", "verbally",
-  // Common br words (start)
-  "brace", "bracket", "brag", "braid", "brain", "brainy", "brake", "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "brim", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", "broke", "broken", "bronze", "brook", "broom", "brother", "brought", "brown", "browse", "browser", "bruise", "brush", "brute", "brutal",
-  // Common tr words (start)
-  "trace", "track", "tract", "tractor", "trade", "trader", "trading", "tradition", "traditional", "traffic", "tragic", "tragedy", "trail", "trailer", "train", "trained", "trainer", "training", "trait", "traitor", "tramp", "trample", "trance", "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "trapped", "trash", "trauma", "travel", "traveled", "traveler", "traverse", "tray", "tread", "treasure", "treasury", "treat", "treatment", "treaty", "treble", "trek", "tremble", "tremendous", "tremor", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", "tribute", "trick", "tricky", "trickle", "tried", "trigger", "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", "trivial", "troop", "trooper", "trophy", "tropic", "tropical", "trot", "trouble", "trousers", "trout", "truce", "truck", "trudge", "true", "truly", "trump", "trumpet", "trunk", "trust", "trusted", "trusty", "truth", "truthful"
-  // Common fb/bf words
-  , "barefoot", "behalf", "softball", "breakfast",
-  // Common tb/bt words
+// Word lists (same as your document)
+const lftIndex = [
+  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful",
+  "after", "afternoon", "afterward", "aircraft", "craft", "crafted", "draft", "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", "thrifty", "target",
+  "absorb", "arbitrary", "barber", "barbecue", "celebrate", "celebrated",  "cerebral", "disturb", "embraced", "fiber", "harbor", "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor", "neighborhood", "number", "october", "orbit", "remember", "remembered", "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally",
+  "brace", "bracket", "brag", "braid", "brain", "brainy", "brake", "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", "broke", "broken", "bronze", "brook", "broom", "brother", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal",
+  "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traditional", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait", "traitor", "tramp", "trample", "trance", "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "trapped", "trash", "trauma",  "traverse", "tray", "tread", "treasure", "treasury", "treat", "treaty", "treble", "trek", "tremble", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", "tribute", "trick", "tricky", "trickle", "tried",  "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", "trivial", "troop", "trooper", "trophy", "tropic", "tropical", "trot", "trouble", "trousers", "trout", "truce", "trudge", "true", "truly", "trump", "trumpet", "trunk", "trust", "trusted", "trusty", "truth", "truthful",
+   "behalf", "softball", "breakfast",
   "basketball", "football", "doubt", "doubtful", "obtain", "obtained", "subtract"
 ];
 
 const lftMiddle_1 = [ 
-  "added","aided","allowed","appeared","arrived","awarded","based","believed","biked","blessed","breathed","bred", "burned","cared","caused",
-  "charged","cleared","closed","coded","colored","complained","composed","continued", "copied","covered","created","credited","crossed","curved",
+  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed","bred", "burned","cared","caused",
+  "charged","cleared","coded","colored","complained","composed","continued", "copied","covered","created","credited","crossed","curved",
   "decided","declined","decreased","deed","defined","denied","depended","described","destroyed","differed","directed","discussed","dropped",
   "edited","ended","enjoyed","equipped","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
-  "extended","fixed","flowed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
-  "increased", "indicated","injured","invested","involved","joked","jumped","kicked","killed","kissed","launched","lived","loaded","located", 
-  "locked","looked","loved","merged","mixed","needed and nodded","nursed","observed","operated","organized","picked","piped", "pleased","priced",
+  "extended","fixed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
+  "increased", "indicated","injured","invested","involved","joked","jumped","kicked","killed","kissed","launched","lived","loaded", 
+  "merged","mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
   "protected","published","punched","raised","realized","recognized","referred","reflected","refused", "regretted","related","relaxed","rendered",
-  "reserved","resolved","rolled","seized","served","shifted","sized","solved","sounded", "spoiled","stretched","struck","submitted","succeeded",
+  "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","stretched","struck","submitted","succeeded",
   "supported","surrounded","swallowed","switched","taxed","transferred", "transformed","translated","transported","trapped","traveled","treated",
   "treed","tried","triggered","trimmed","troubled", "trusted","uncovered","united","urged","waved","zoned" 
-] ;
-   const lftMiddle_2 = [
+];
+
+const lftMiddle_2 = [
   "decade","decay","decent","decide","decision","declare","declared","decor","decrease","dedicate","dedicated","deduce",
   "deduct","defeat","defeated","defend","defense","defensive","defer","define","definite","definitely","definition",
-  "degree","delay","delayed","delete","deleted","deliberate","deliberately","delicate","deliver","delivered","delivery",
-  "demand","demanded","democracy","democratic","demonstrate","demonstrated","denial","dense","dental","dentist","deny",
-  "depart","departed","department","departure","depend","dependent","depending","depict","deploy","deployed","deposit",
-  "depress","depressed","depression","depth","deputy","derive","derived","descend","descended","description","desert",
-  "deserted","deserve","deserved","design","designed","designer","desirable","desire","desired","desk","despair",
-  "desperate","desperately","despite","dessert","destination","destiny","destroy","destruction","detail","detailed",
-  "detect","detected","detective","deter","determine","determined","develop","developed","developer","developing",
-  "development","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medic","medical",
-  "medication","predict","predicted","syndicate","access","ancestor","cancer","cell","cellar","cement","cemetery",
-  "census","cent","center","central","century","ceremony","certain","certainly","certificate","cease","ceased",
-  "celebrate","celebrated","celebration","celebrity","concert","eclipse","excel",
+  "degree","delay","delete","deliberate","deliberately","delicate","deliver","delivered","delivery",
+  "demanded","democracy","democratic","demonstrate","demonstrated","denial","dense","dental","dentist","deny",
+  "depart","departed","department","departure","depend","dependent","depending","depict","deployed","deposit",
+  "depth","deputy","derived","descend","descended","description","desert",
+  "deserted","deserve","deserved","designer","desirable","desire","desired","desk","despair",
+  "desperate","desperately","despite","dessert","destination","destiny","destroy","detail",
+  "detect","detected","detective","determine","determined","develop","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medical",
+  "medicin","predicted","syndicate","access","ancestor","cell","cellar","cement","cemetery",
+  "census","central","century","ceremony","certain","certainly","certificate","ceases","ceased",
+  "celebrated","celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessaries","necessary","necessity","nice","nicely",
-  "ocean","preced","precede","preceded","precedent","preceding","precious","precise","precisely","recent","recently",
-  "reception","recipe","recede","receipt","receive","received","receiver"
-];
-// Adjacent same-finger bigrams for LEFT RING
-// Includes: ws/sw, sx/xs
- const lftRing = [
-  // Common sw words
-  "answer", "answered", "swap", "swear", "sweat", "sweater", "swell", "swept", "swift", "swiftly", "swim", "swimmer", "swimming", "swing", "swipe", "swirl", "swiss", "switch", "switched", "sword", "swore", "sworn",
-  // Common ws words
-  "allows", "arrows", "bows", "brows", "claws", "cows", "crows", "draws", "elbows", "eyebrows", "fellowships", "flows", "follows", "glows", "grows", "knows", "laws", "mows", "news", "newspaper", "owes", "paws", "pillows", "plows", "rows", "shadows", "shows", "slows", "snows", "sparrows", "swallows", "throws", "views", "vows", "widows", "windows", "yellows"
+  "ocean","precede","preceded","precedent","precious","precise","precisely","recent","recently",
+  "reception","recipe","receipt","receive","received","receiver"
 ];
 
-// Adjacent same-finger bigrams for RIGHT INDEX
-// Includes: yh/hy, hn/nh, uj/ju, jm/mj, um/mu, yn/ny
- const rightIndex = [
-  // Common yh/hy words
-  "anyhow", "anybody", "anymore", "anyone", "anything", "anytime", "anyway", "anywhere", "boyhood", "but", "neighborhood", "parenthood","object", 
-  // Common hn/nh words  
- "inherent", "inherit", "inherited", "technique", "technology", "unhappy",
-  // Common uj/ju words
-  "adjust", "adjusted", "injury", "injure", "injured", "juice", "juicy", "jump", "jumped", "junior", "jury", "just", "justice", "justify",
-  // Common jm words
+const lftRing = [
+  "answered", "swap", "swear", "sweat", "swell", "swept", "swift", "swim",  "swing", "swipe",  "switch",  "sword", "swore", "sworn",
+  "allows", "arrows", "bows", "brows", "claws", "cows", "crows", "draws", "elbows", "eyebrows", "flows", "follows", "grows", "knows", "laws", "mows", "news", "newspaper", "owes", "paws", "pillows", "plows", "rows", "shadows", "shows", "slows", "snows", "swallows", "throws", "views", "vows", "widows", "windows", "yellows"
+];
+
+const rightIndex = [
+  "anyhow", "anymore", "anyone", "anytime",  "but", "neighborhood", "parenthood","object", 
+  "inherent", "inherit", "technique", "technology", "unhinged",
+   "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify",
   "judgment",
-  // Common um/mu words
-  "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "columnist", "consume", "consumed", "consumer", "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor", "humorous", "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hunter", "hurdle", "hurl", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plum", "plumb", "plumber", "plume", "plump", "premium", "pump", "pumped", "resume", "resumed", "rumble", "rumor", "slum", "slump", "spectrum", "stump", "stumble", "stumbled", "sum", "summary", "summer", "summit", "summon", "summoned", "thumb", "thump", "trump", "trumpet", "tummy", "tumor", "tumult", "vacuum", "volume", "yummy"
+  "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "columnist", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor", "humorous", "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurl", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "plump", "premium", "pump", "pumped", "resume", "resumed", "rumble", "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "thump", "trump", "trumpet", "tummy", "tumor", "tumult", "vacuum", "volume", "yummy"
 ];
 
-// Adjacent same-finger bigrams for RIGHT MIDDLE
-// Includes: ik/ki
- const rightMiddle = [
-  // Common ik/ki words
-  "alike", "bike", "biking", "dislike", "hike", "hiked", "hiker", "hiking", "kind", "kinda", "kindergarten", "kindly", "kindness", "king", "kingdom", "kiss", "kissed", "kitchen", "kite", "like", "liked", "likely", "likewise", "liking", "mike", "mike", "nickname", "pike", "spike", "spiked", "strike", "striking", "trike", "unlike", "viking"
+const rightMiddle = [
+  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "liked", "likely", "likewise", "liking", "mike", "nickname", "pike", "spike", "strike", "striking", "trike", "unlike",
 ];
 
-// Adjacent same-finger bigrams for RIGHT RING
-// Includes: ol/lo
- const rightRing = [
-  // Common ol words
-  "alcohol", "bold", "behold", "cold", "colder", "coldest", "fold", "folded", "folder", "gold", "golden", "hold", "holder", "holding", "holiday", "mold", "old", "older", "oldest", "scold", "scolded", "sold", "soldier", "told", "unfold", "uphold",
-  // Common lo words
-  "allow", "allowed", "alone", "along", "alongside", "aloud", "below", "belong", "belonged", "belonging", "biology", "block", "blocked", "blond", "blonde", "blood", "bloody", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "cloned", "close", "closed", "closely", "closer", "closest", "closet", "closure", "cloth", "clothe", "clothes", "clothing", "cloud", "cloudy", "color", "colored", "colorful", "colony", "deploy", "deployed", "dialogue", "dollar", "ecology", "employ", "employed", "employee", "employer", "employment", "enroll", "enrolled", "explore", "explored", "explorer", "exploring", "fellow", "fellowship", "flop", "flopped", "floor", "flour", "flourish", "flow", "flowed", "flower", "follow", "followed", "following", "geology", "glow", "glove", "glory", "glorious", "globe", "global", "gloom", "gloomy", "glossary", "hello", "hollow", "ideology", "load", "loaded", "loaf", "loan", "lobby", "local", "locate", "located", "location", "lock", "locked", "locker", "lodge", "loft", "lofty", "logic", "logical", "logo", "lollipop", "lone", "lonely", "loneliness", "long", "longed", "longer", "longest", "longing", "look", "looked", "looking", "loom", "loomed", "loop", "looped", "loose", "loosely", "loosen", "lord", "lose", "loser", "losing", "loss", "lost", "lottery", "loud", "loudly", "lounge", "love", "loved", "lovely", "lover", "loving", "lower", "lowered", "lowest", "loyal", "loyalty", "melon", "parole", "patrol", "pillow", "plot", "plotted", "plow", "plowed", "polo", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slow", "slowed", "slower", "slowly", "solo", "technology", "theology", "yellow", "zoology"
+const rightRing = [
+  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold",  "holding", "mold", "old",  "oldest", "scolded", "sold", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "blonde", "blood", "bloody", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "close", "closed", "closest", "closet", "closure", "cloth", "clothe", "clothes", "clothing", "cloud", "cloudy", "color", "colored", "colorful", "colony", "deploy", "deployed", "dialogue", "dollar", "ecology",  "employee", "employer", "employment", "explore",  "explorer", , "fellow", "fellowship", "flop", "floor", "flour", "flourish", "flow", "flower", "follow",  "geology", "glow", "glove", "glory", "glorious", "globe", "global", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded", "loaf", "loan", "lobby", "local", "located", "locker", "lodge",  "logic", "logical", "logo", "lollipop", "lone", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosely", "loosen", "lord", "lottery", "loud", "loudly", "lounge", "loyal", "loyalty", "melon", "parole", "patrol", "pillow", "plotted", "plow", "polo", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot",  "slowly", "solo", "technology", "theology", "yellow", "zoology"
 ];
+
+const farReached = [ 
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equipped",\
+]
 
 let joined_list = [];
-joined_list = joined_list.concat(lftIndex).concat(lftMiddle_1).concat(lftMiddle_2).concat(lftRing).concat(rightIndex).concat(rightMiddle).concat(rightRing)
+joined_list = joined_list.concat(lftIndex, lftMiddle_1, lftMiddle_2, lftRing, rightIndex, rightMiddle, rightRing, farReached);
 
-
-let timeLimit = 15;
+let timeLimit = 30;
 let timeLeft = timeLimit;
 let timerInterval;
 let currentWordIndex = 0;
-let currentLetterIndex = 0;
 let testActive = false;
 let testStarted = false;
 let correctChars = 0;
@@ -106,6 +80,10 @@ let incorrectChars = 0;
 let totalChars = 0;
 let wordsTyped = 0;
 let generatedWords = [];
+let usedWords = new Set();
+let lineHeight = 2.8; // rem - matches CSS line-height
+let currentLine = 0;
+let wordLines = []; // Track which line each word is on
 
 const inputField = document.getElementById('inputField');
 const wordsDisplay = document.getElementById('wordsDisplay');
@@ -114,7 +92,6 @@ const resultScreen = document.getElementById('resultScreen');
 const focusMessage = document.getElementById('focusMessage');
 const snowflakeCursor = document.getElementById('snowflakeCursor');
 
-// Snowflake cursor follower
 let mouseX = 0;
 let mouseY = 0;
 let trailCounter = 0;
@@ -125,7 +102,6 @@ document.addEventListener('mousemove', (e) => {
     snowflakeCursor.style.left = mouseX + 'px';
     snowflakeCursor.style.top = mouseY + 'px';
 
-    // Create trail effect when typing
     if (testActive && trailCounter % 5 === 0) {
         createSnowflakeTrail(mouseX, mouseY);
     }
@@ -139,18 +115,37 @@ function createSnowflakeTrail(x, y) {
     trail.style.left = x + 'px';
     trail.style.top = y + 'px';
     document.body.appendChild(trail);
-
     setTimeout(() => trail.remove(), 1000);
+}
+
+function getRandomWord() {
+    let word;
+    let attempts = 0;
+    do {
+        word = joined_list[Math.floor(Math.random() * joined_list.length)];
+        attempts++;
+        if (attempts > 50) {
+            usedWords.clear();
+        }
+    } while (usedWords.has(word) && attempts <= 50);
+    
+    usedWords.add(word);
+    if (usedWords.size > 100) {
+        const wordsArray = Array.from(usedWords);
+        usedWords = new Set(wordsArray.slice(-50));
+    }
+    
+    return word;
 }
 
 function generateWords() {
     generatedWords = [];
-    for (let i = 0; i < 100; i++) {
-        generatedWords.push(joined_list[Math.floor(Math.random() * joined_list.length)]);
+    // Generate 360 words initially so there's always content
+    for (let i = 0; i < 360; i++) {
+        generatedWords.push(getRandomWord());
     }
     displayWords();
 }
-
 
 function displayWords() {
     wordsDisplay.innerHTML = '';
@@ -170,9 +165,61 @@ function displayWords() {
         wordsDisplay.appendChild(wordSpan);
     });
 
-    // Highlight first letter
+    // Calculate which line each word is on
+    calculateWordLines();
+
     const firstLetter = wordsDisplay.querySelector('.word[data-word-index="0"] .letter[data-letter-index="0"]');
     if (firstLetter) firstLetter.classList.add('current');
+}
+
+function calculateWordLines() {
+    wordLines = [];
+    const words = wordsDisplay.querySelectorAll('.word');
+    let currentLineNum = 0;
+    let previousTop = null;
+
+    words.forEach((word, index) => {
+        const rect = word.getBoundingClientRect();
+        
+        if (previousTop !== null && rect.top > previousTop + 10) {
+            currentLineNum++;
+        }
+        
+        wordLines[index] = currentLineNum;
+        previousTop = rect.top;
+    });
+}
+
+function scrollToNextLine() {
+    currentLine++;
+    const remInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    const scrollAmount = lineHeight * remInPixels;
+    
+    wordsDisplay.style.transform = `translateY(-${currentLine * scrollAmount}px)`;
+    wordsDisplay.style.transition = 'transform 0.3s ease';
+    
+    // Add new words when we scroll
+    for (let i = 0; i < 15; i++) {
+        const newWord = getRandomWord();
+        generatedWords.push(newWord);
+        
+        const wordSpan = document.createElement('span');
+        wordSpan.className = 'word';
+        wordSpan.dataset.wordIndex = generatedWords.length - 1;
+
+        newWord.split('').forEach((letter, letterIndex) => {
+            const letterSpan = document.createElement('span');
+            letterSpan.className = 'letter';
+            letterSpan.textContent = letter;
+            letterSpan.dataset.letterIndex = letterIndex;
+            wordSpan.appendChild(letterSpan);
+        });
+
+        wordsDisplay.appendChild(wordSpan);
+    }
+    
+    // Recalculate line positions after adding new words
+    setTimeout(() => calculateWordLines(), 350);
 }
 
 function startTest() {
@@ -211,14 +258,17 @@ function restart() {
     clearInterval(timerInterval);
     timeLeft = timeLimit;
     currentWordIndex = 0;
-    currentLetterIndex = 0;
+    currentLine = 0;
     testActive = false;
     testStarted = false;
     correctChars = 0;
     incorrectChars = 0;
     totalChars = 0;
     wordsTyped = 0;
+    usedWords.clear();
+    wordLines = [];
 
+    wordsDisplay.style.transform = 'translateY(0)';
     timer.textContent = timeLimit;
     inputField.value = '';
     inputField.disabled = false;
@@ -236,9 +286,11 @@ inputField.addEventListener('input', (e) => {
     const typedValue = e.target.value;
     const currentWord = generatedWords[currentWordIndex];
     const wordElement = wordsDisplay.querySelector(`.word[data-word-index="${currentWordIndex}"]`);
+    
+    if (!wordElement) return;
+    
     const letters = wordElement.querySelectorAll('.letter');
 
-    // Remove all current classes
     letters.forEach(letter => letter.classList.remove('current'));
 
     // Check each letter
@@ -259,31 +311,49 @@ inputField.addEventListener('input', (e) => {
         letters[typedValue.length].classList.add('current');
     }
 
-    // Check if word is complete with space
-    if (typedValue.endsWith(' ') && typedValue.trim() !== '') {
+    // Only allow moving to next word if space is pressed AND word is complete
+    if (typedValue.endsWith(' ')) {
         const typedWord = typedValue.trim();
         
-        // Count correct and incorrect characters
-        for (let i = 0; i < Math.max(typedWord.length, currentWord.length); i++) {
-            totalChars++;
-            if (i < typedWord.length && i < currentWord.length && typedWord[i] === currentWord[i]) {
-                correctChars++;
-            } else {
-                incorrectChars++;
+        // Check if the typed word length matches the current word length
+        if (typedWord.length === currentWord.length) {
+            // Count correct and incorrect characters
+            for (let i = 0; i < currentWord.length; i++) {
+                totalChars++;
+                if (typedWord[i] === currentWord[i]) {
+                    correctChars++;
+                } else {
+                    incorrectChars++;
+                }
             }
-        }
 
-        wordsTyped++;
-        currentWordIndex++;
-        currentLetterIndex = 0;
-        e.target.value = '';
+            wordsTyped++;
+            
+            // Check if we're moving to a new line
+            const currentWordLine = wordLines[currentWordIndex];
+            const nextWordLine = wordLines[currentWordIndex + 1];
+            
+            if (nextWordLine !== undefined && nextWordLine > currentWordLine && currentWordLine >= 1) {
+                scrollToNextLine();
+            }
+            
+            currentWordIndex++;
+            e.target.value = '';
 
-        // Highlight next word's first letter
-        const nextWord = wordsDisplay.querySelector(`.word[data-word-index="${currentWordIndex}"]`);
-        if (nextWord) {
-            const nextFirstLetter = nextWord.querySelector('.letter[data-letter-index="0"]');
-            if (nextFirstLetter) nextFirstLetter.classList.add('current');
+            const nextWord = wordsDisplay.querySelector(`.word[data-word-index="${currentWordIndex}"]`);
+            if (nextWord) {
+                const nextFirstLetter = nextWord.querySelector('.letter[data-letter-index="0"]');
+                if (nextFirstLetter) nextFirstLetter.classList.add('current');
+            }
+        } else {
+            // If word is not complete, remove the space
+            e.target.value = typedValue.trim();
         }
+    }
+
+    // Prevent typing more characters than the word length
+    if (typedValue.length > currentWord.length && !typedValue.endsWith(' ')) {
+        e.target.value = typedValue.slice(0, currentWord.length);
     }
 });
 
@@ -293,7 +363,6 @@ inputField.addEventListener('keydown', (e) => {
     }
 });
 
-// Control buttons
 document.querySelectorAll('[data-time]').forEach(btn => {
     btn.addEventListener('click', () => {
         document.querySelectorAll('[data-time]').forEach(b => b.classList.remove('active'));
@@ -303,7 +372,6 @@ document.querySelectorAll('[data-time]').forEach(btn => {
     });
 });
 
-// Focus management
 document.addEventListener('click', () => {
     inputField.focus();
     focusMessage.classList.add('hidden');
@@ -320,6 +388,5 @@ inputField.addEventListener('blur', () => {
     }
 });
 
-// Initialize
 generateWords();
 inputField.focus();
