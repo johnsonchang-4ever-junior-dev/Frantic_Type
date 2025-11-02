@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frantic Typing Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <!-- Snowflake Cursor -->
+    <div class="snowflake-cursor" id="snowflakeCursor">❄️</div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">Frantic<span> Type</span></div>
+        </div>
+
+        <div class="controls">
+            <div class="btn-group">
+                <button class="control-btn active" data-time="15">15</button>
+                <button class="control-btn" data-time="30">30</button>
+                <button class="control-btn" data-time="60">60</button>
+                <button class="control-btn" data-time="120">120</button>
+            </div>
+        </div>
+
+        <div class="test-area">
+            <div class="timer" id="timer">15</div>
+            <div class="words-display" id="wordsDisplay"></div>
+            <input type="text" class="input-field" id="inputField" autocomplete="off">
+        </div>
+
+        <div class="focus-message" id="focusMessage">Click here or press any key to focus</div>
+
+        <div class="result-screen" id="resultScreen">
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="wpmResult">0</div>
+                    <div class="stat-label">wpm</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="accuracyResult">0%</div>
+                    <div class="stat-label">accuracy</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="rawResult">0</div>
+                    <div class="stat-label">raw</div>
+                </div>
+            </div>
+            <button class="restart-btn" onclick="restart()">restart test</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

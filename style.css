@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', 'Courier New', monospace;
+    background: #323437;
+    color: #d1d0c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    cursor: none;
+}
+
+/* Snowflake Cursor */
+.snowflake-cursor {
+    position: fixed;
+    font-size: 28px;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s ease;
+    filter: drop-shadow(0 0 8px rgba(135, 206, 235, 0.6));
+    animation: snowflakeFloat 2s ease-in-out infinite;
+}
+
+@keyframes snowflakeFloat {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #87ceeb;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(135, 206, 235, 0.5);
+}
+
+.logo span {
+    color: #d1d0c5;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    background: #2c2e31;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.control-btn {
+    background: transparent;
+    border: none;
+    color: #646669;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.control-btn:hover {
+    color: #d1d0c5;
+    background: rgba(135, 206, 235, 0.1);
+}
+
+.control-btn.active {
+    background: #87ceeb;
+    color: #323437;
+}
+
+.test-area {
+    background: #2c2e31;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 0 30px rgba(135, 206, 235, 0.1);
+}
+
+.timer {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #87ceeb;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
+}
+
+.words-display {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+    user-select: none;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.word {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.letter {
+    color: #646669;
+    position: relative;
+}
+
+.letter.correct {
+    color: #87ceeb;
+}
+
+.letter.incorrect {
+    color: #ca4754;
+}
+
+.letter.current {
+    position: relative;
+}
+
+/* Cursor line with snowflake above */
+.letter.current::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #87ceeb;
+    animation: cursorBlink 1s infinite;
+}
+
+.letter.current::after {
+    content: '❄️';
+    position: absolute;
+    left: -14px;
+    top: -35px;
+    font-size: 24px;
+    animation: snowflakeBlink 1s infinite;
+}
+
+@keyframes cursorBlink {
+    0%, 50% { 
+        opacity: 1;
+    }
+    51%, 100% { 
+        opacity: 0;
+    }
+}
+
+@keyframes snowflakeBlink {
+    0%, 50% { 
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+    51%, 100% { 
+        opacity: 0;
+        transform: scale(0.8) rotate(180deg);
+    }
+}
+
+.input-field {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 3rem;
+    color: #87ceeb;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(135, 206, 235, 0.5);
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #646669;
+    margin-top: 5px;
+}
+
+.result-screen {
+    display: none;
+    text-align: center;
+}
+
+.result-screen.show {
+    display: block;
+}
+
+.restart-btn {
+    background: #87ceeb;
+    color: #323437;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: none;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    box-shadow: 0 0 20px rgba(135, 206, 235, 0.3);
+}
+
+.restart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 30px rgba(135, 206, 235, 0.5);
+}
+
+.focus-message {
+    text-align: center;
+    color: #646669;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Snowflake trail effect */
+.snowflake-trail {
+    position: fixed;
+    font-size: 16px;
+    pointer-events: none;
+    z-index: 9999;
+    animation: trailFade 1s ease-out forwards;
+}
+
+@keyframes trailFade {
+    0% {
+        opacity: 0.8;
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3) rotate(360deg);
+    }
+}
