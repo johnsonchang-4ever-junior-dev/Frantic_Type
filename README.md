@@ -2,24 +2,31 @@
 
 A fast-paced typing speed test application with a winter theme and unique word selection algorithm designed to improve typing proficiency through targeted finger exercises.
 
+# How to run
+
+The link to view the project: ''' https://johnsonchang-4ever-junior-dev.github.io/Frantic_Type/index.html '''
+
 ## Features
 
 ### 🎯 Core Functionality
+
 - **Multiple Test Durations**: Choose from 15, 30, 60, or 120-second typing tests
 - **Real-time Statistics**: Track your Words Per Minute (WPM), accuracy percentage, and raw typing speed
 - **Instant Feedback**: Live highlighting of correct and incorrect characters as you type
 - **Restart Capability**: Quick restart function to retry tests immediately
 
 ### 🎨 Visual Design
+
 - **Winter Theme**: Clean, dark interface with snowflake cursor animation
 - **Snowflake Cursor**: Custom animated snowflake cursor that follows mouse movement
 - **Responsive Design**: Works on various screen sizes and devices
 - **Focus Management**: Clear focus indicators and auto-focus functionality
 
 ### 🧠 Smart Word Selection
+
 The application uses a sophisticated word selection algorithm based on finger-specific typing patterns:
 
-- **Left Hand Targeting**: 
+- **Left Hand Targeting**:
   - Index finger bigrams (rf/fr, ft/tf, fv/vf, etc.)
   - Middle finger combinations
   - Ring finger patterns
@@ -30,15 +37,18 @@ The application uses a sophisticated word selection algorithm based on finger-sp
 ## Getting Started
 
 ### Prerequisites
+
 - A modern web browser (Chrome, Firefox, Safari, or Edge)
 - No additional installations required
 
 ### Installation
+
 1. Clone or download this repository
 2. Open `index.html` in your web browser
 3. Start typing immediately!
 
 ### Usage
+
 1. **Select Duration**: Click on one of the time buttons (15, 30, 60, or 120 seconds)
 2. **Focus**: Click anywhere or press any key to focus the input field
 3. **Start Typing**: Begin typing the displayed words - the test starts automatically
@@ -58,18 +68,22 @@ Frantic_Type/
 ## Technical Details
 
 ### Word Categories
+
 The application categorizes words based on typing finger usage:
+
 - `lftIndex`: Words targeting left index finger adjacent bigrams
 - `lftMiddle_1` & `lftMiddle_2`: Left middle finger exercises
 - `lftRing`: Left ring finger patterns
 - `rightIndex`, `rightMiddle`, `rightRing`: Corresponding right-hand patterns
 
 ### Performance Metrics
+
 - **WPM**: Standard words per minute calculation (5 characters = 1 word)
 - **Accuracy**: Percentage of correctly typed characters
 - **Raw Speed**: Total characters typed per minute regardless of errors
 
 ### Browser Compatibility
+
 - Supports all modern browsers with ES6+ features
 - Uses CSS animations and transitions
 - Responsive design for mobile and desktop
@@ -77,6 +91,7 @@ The application categorizes words based on typing finger usage:
 ## Contributing
 
 Feel free to contribute to this project by:
+
 1. Reporting bugs or suggesting features
 2. Improving the word selection algorithm
 3. Enhancing the visual design
