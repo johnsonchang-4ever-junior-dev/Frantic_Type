@@ -6,13 +6,13 @@ const lftIndex = [
     "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
    "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
-    "rubber", "september", "suburb", "suburban", "timber", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
-    "branch", "brand", "brass", "brave",  "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
+    "rubber", "september", "suburb", "suburban", "timber", "urban",  "brace", "bracket", "brag",  "brain", "brainy", "brake", 
+    "branch", "brand", "brass", "brave",  "bravery", "breach", "bread", "break", "fast", "breast", "breath", "breathe", "breeze", "breezy", 
     "brick",  "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
     "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", 
      "collect", 
     "trauma",  "tribute",  "triumph", 
-    "breakfast",  "doubt",  "obtain", "subtract", "stretch", "merge"
+    "doubt",  "obtain", "subtract", "stretch", "merge"
 ];
 
 const lftMiddle_1 = [ 
@@ -38,7 +38,7 @@ const lftMiddle_2 = [
   "depth", "description","desert",
   "deserve","designer","desirable","desk",
   "desperate","despite","dessert","detail",
-  "detect","detective","determine","develop","device","devise","devote","advocate","broadcast","edicates","medical",
+  "detect", "device","devise","devote","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement",
   "census","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
@@ -49,7 +49,7 @@ const lftMiddle_2 = [
 
 const lftRing = [
   "answer", "swap", "swear", "sweat", "swell", "swept", "swift", "swim",  "swing", "swipe",  "switch",  "sword", "swore", "sworn",
-  "allows", "arrows", "bows", "brows", "claws", "cows", "crows", "draws", "elbows", "eyebrows", "flows", "follows", "grows", "knows", "laws", "news", "newspaper", "owes", "paws", "pillows", "plows", "rows", "shadows", "shows", "slows", "snows", "swallows", "throws", "views", "vows", "widows", "windows", "yellows"
+  "allows", "arrows",  "claws", "cows",  "draws", "follows", "grows", "knows", "laws", "news", "owes", "paws", "pillows", "rows",  "swallows",  "views", "yellows"
 ];
 
 const rightIndex = [
@@ -61,7 +61,7 @@ const rightIndex = [
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
+  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
 ];
 
 const rightRing = [
