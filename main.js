@@ -19,16 +19,16 @@ const lftIndex = [
 ];
 
 const lftMiddle_1 = [ 
-  "added","aided","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
+  "added","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
   "charged","cleared","coded","colored","continued", "copied","created","crossed","curved",
-  "decided","declined", "denied","depended","described","differed","directed","discussed","dropped",
-  "edited","ended","enjoyed","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
-  "extended","fixed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
+  "declined", "described","differed","directed","discussed","dropped",
+  "edited", "enjoyed","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
+  "extended","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
     "indicated","injured", "involved","joked","jumped","kicked","launched","lived","loaded", 
-  "mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
+  "mixed", "nodded","nursed","observed","operated","organized","piped", "pleased","priced",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
-  "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","struck","submitted","succeeded",
-  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","trapped","traveled","tree", 
+  "reserved","resolved","rolled","seized","served","sized","solved", "spoiled","struck","submitted","succeeded",
+  "supported","swallowed","switched","taxed","transferred", "translated","trapped","traveled","tree", 
   "tried","triggered","trimmed","troubled","uncovered","united","urged","waved"
 ];
 
@@ -38,15 +38,15 @@ const lftMiddle_2 = [
   "degree",
   "demanded","democracy","democratic","demonstrate","dentist","deny",
   "depart","depend","dependent","depict","deposit",
-  "depth", "descended","description","desert",
-  "deserve","deserved","designer","desirable","desire","desk","despair",
+  "depth", "description","desert",
+  "deserve","deserved","designer","desirable","desk",
   "desperate","despite","dessert","destroy","detail",
   "detect","detective","determine","develop","device","devise","devote","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
   "census","central","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
-  "ocean","precede","preceded","precedent","precious","precise","precisely","recent",
+  "ocean","precede","precedent","precious","precise","precisely","recent",
   "reception","recipe","receipt","receive","received","receiver"
 ];
 
