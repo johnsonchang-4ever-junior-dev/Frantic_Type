@@ -2,46 +2,46 @@
 const lftIndex = [
   "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", "strengths", 
   "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", 
-  "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful", "after", "afternoon", "afterward", "aircraft", "craft", "draft",
+  "shaft", "surf", "surface",  "warfare", "waterfall", "after", "afternoon", "afterward", "aircraft", "craft", "draft",
    "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
    "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "cerebral", "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
     "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
     "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
-    "brick", "bride", "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
+    "brick",  "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
      "ronze", "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", "traitor", 
   "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
    "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "collect", 
    "trash", "trauma",  "traverse",  "treasure", "treasury", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", 
    "tribute", "trick", "tricky", "trickle",   "trillion", "trim", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
    "trivial", "troop", "trooper", "trophy", "tropical", "trouble", "trousers", "true", "truly", 
-    "trunk", "trust", "truth",  "breakfast",  "doubt",  "obtain", "subtract", "stretch"
+    "trunk", "trust", "truth",  "breakfast",  "doubt",  "obtain", "subtract", "stretch", "merge"
 ];
 
 const lftMiddle_1 = [ 
   "added","aided","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
   "charged","cleared","coded","colored","continued", "copied","created","crossed","curved",
   "decided","declined", "denied","depended","described","differed","directed","discussed","dropped",
-  "edited","ended","enjoyed","equipped","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
+  "edited","ended","enjoyed","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extended","fixed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
     "indicated","injured", "involved","joked","jumped","kicked","launched","lived","loaded", 
-  "merged","mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
-  "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed","rendered",
+  "mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
+  "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
   "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","struck","submitted","succeeded",
-  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","tree", 
+  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","trapped","traveled","tree", 
   "tried","triggered","trimmed","troubled","uncovered","united","urged","waved"
 ];
 
 const lftMiddle_2 = [
-  "decade","decay","decent","decide","decision","declare","decor","decrease","dedicate","dedicated",
-  "deduct","defeat", "defend","defense","defensive","defer","define","definite","definitely","definition",
-  "degree","delay","delete","deliberate","delicate","deliver", "delivery",
-  "demanded","democracy","democratic","demonstrate","denial","dense","dental","dentist","deny",
-  "depart","department","departure","depend","dependent","depending","depict","deployed","deposit",
-  "depth","deputy","descend","descended","description","desert",
+  "decade","decide","declare","decor","decrease","dedicate",
+  "deduct", "defense","defensive","definite","definitely", 
+  "degree",
+  "demanded","democracy","democratic","demonstrate","dentist","deny",
+  "depart","depend","dependent","depict","deposit",
+  "depth", "descended","description","desert",
   "deserve","deserved","designer","desirable","desire","desk","despair",
-  "desperate","despite","dessert","destiny","destroy","detail",
-  "detect","detected","detective","determine","develop","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medical",
+  "desperate","despite","dessert","destroy","detail",
+  "detect","detective","determine","develop","device","devise","devote","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
   "census","central","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
@@ -59,8 +59,8 @@ const rightIndex = [
   "anyhow", "anymore", "anyone", "anytime",  "but", "neighborhood", "parenthood","object", 
   "inherent", "inherit", "technique", "technology", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
-  "judgment", "nurture", "union", 
-  "album", "alum", "aluminum", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
+  "judgment", "nurture", "union", "alumnus", "alumni", 
+  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
 
 const rightMiddle = [
@@ -72,7 +72,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equipped","pizza", "jazz", "zucchini", "fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equipp","pizza", "jazz", "zucchini", "fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber"
 ]
 
 let joined_list = [];
