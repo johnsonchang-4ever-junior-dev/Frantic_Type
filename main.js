@@ -57,7 +57,7 @@ const rightIndex = [
   "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", "alumnus", "alumni", 
-  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
+  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
 
 const rightMiddle = [
@@ -153,55 +153,30 @@ function randInt(max) {
     return r % max;
 }
 
-/** -------------------------------------------------------------
-    NEW getRandomWord()
-    ------------------------------------------------------------- */
-function getRandomWord() {
-    // If the pool of *unused* words is empty → refill it
-    if (usedWords.size === joined_list.length) {
-        usedWords.clear();               // start over
-    }
-
-    let index;
-    do {
-        index = randInt(joined_list.length);
-    } while (usedWords.has(joined_list[index]));
-
-    const word = joined_list[index];
-    usedWords.add(word);
-
-    // Keep the “recently-used” cache small (last 50 words)
-    if (usedWords.size > 100) {
-        const recent = Array.from(usedWords).slice(-50);
-        usedWords = new Set(recent);
-    }
-
-    return word;
-}
 
 /** -------------------------------------------------------------
     Old getRandomWord()
     ------------------------------------------------------------- */
 
-// function getRandomWord() {
-//     let word;
-//     let attempts = 0;
-//     do {
-//         word = joined_list[Math.floor(Math.random() * joined_list.length)];
-//         attempts++;
-//         if (attempts > 50) {
-//             usedWords.clear();
-//         }
-//     } while (usedWords.has(word) && attempts <= 50);
+function getRandomWord() {
+    let word;
+    let attempts = 0;
+    do {
+        word = joined_list[Math.floor(Math.random() * joined_list.length)];
+        attempts++;
+        if (attempts > 50) {
+            usedWords.clear();
+        }
+    } while (usedWords.has(word) && attempts <= 50);
     
-//     usedWords.add(word);
-//     if (usedWords.size > 100) {
-//         const wordsArray = Array.from(usedWords);
-//         usedWords = new Set(wordsArray.slice(-50));
-//     }
+    usedWords.add(word);
+    if (usedWords.size > 100) {
+        const wordsArray = Array.from(usedWords);
+        usedWords = new Set(wordsArray.slice(-50));
+    }
     
-//     return word;
-// }
+    return word;
+}
 
 function generateWords() {
     generatedWords = [];
