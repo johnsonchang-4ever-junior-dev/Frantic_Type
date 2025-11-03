@@ -266,6 +266,7 @@ function startTest() {
     if (!testStarted) {
         testStarted = true;
         testActive = true;
+        snowflakeCursor.style.display = 'none'; 
         timerInterval = setInterval(() => {
             timeLeft--;
             timer.textContent = timeLeft;
@@ -307,6 +308,8 @@ function restart() {
     wordsTyped = 0;
     usedWords.clear();
     wordLines = [];
+
+    snowflakeCursor.style.display = 'block'; 
 
     wordsDisplay.style.transform = 'translateY(0)';
     timer.textContent = timeLimit;
