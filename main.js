@@ -2,9 +2,9 @@
 const lftIndex = [
   "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", "strengths", 
   "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", 
-  "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful", "after", "afternoon", "afterward", "aircraft", "craft", "crafted", "draft",
+  "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful", "after", "afternoon", "afterward", "aircraft", "craft", "draft",
    "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
-   "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate", "celebrated",  "cerebral", "disturb", "embraced", "fiber", "harbor",
+   "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "cerebral", "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
     "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
     "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
@@ -13,23 +13,23 @@ const lftIndex = [
   "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
    "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "collect", 
    "trash", "trauma",  "traverse",  "treasure", "treasury", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", 
-   "tribute", "trick", "tricky", "trickle", "tried",  "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
+   "tribute", "trick", "tricky", "trickle",   "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
    "trivial", "troop", "trooper", "trophy", "tropical", "trouble", "trousers", "true", "truly", 
-    "trunk", "trust", "trusted", "trusty", "truth",  "breakfast",  "doubt",  "obtain", "subtract"
+    "trunk", "trust", "truth",  "breakfast",  "doubt",  "obtain", "subtract"
 ];
 
 const lftMiddle_1 = [ 
-  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed", "burned","cared","caused", "sex", 
-  "charged","cleared","coded","colored","complained","composed","continued", "copied","covered","created","credited","crossed","curved",
-  "decided","declined","decreased","deed","defined","denied","depended","described","destroyed","differed","directed","discussed","dropped",
+  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
+  "charged","cleared","coded","colored","complained","continued", "copied","covered","created","credited","crossed","curved",
+  "decided","declined","decreased", "defined","denied","depended","described","destroyed","differed","directed","discussed","dropped",
   "edited","ended","enjoyed","equipped","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extended","fixed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
-  "increased", "indicated","injured","invested","involved","joked","jumped","kicked","killed","kissed","launched","lived","loaded", 
+  "increased", "indicated","injured", "involved","joked","jumped","kicked","killed","kissed","launched","lived","loaded", 
   "merged","mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
-  "protected","published","punched","raised","realized","recognized","referred","reflected","refused", "regretted","related","relaxed","rendered",
+  "protected","published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed","rendered",
   "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","stretched","struck","submitted","succeeded",
   "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","treated", "tree", 
-  "treed","tried","triggered","trimmed","troubled", "trusted","uncovered","united","urged","waved","zoned" 
+  "treed","tried","triggered","trimmed","troubled","uncovered","united","urged","waved"
 ];
 
 const lftMiddle_2 = [
