@@ -21,7 +21,7 @@ const lftMiddle_1 = [
   "declined", "described","differed","directed","discussed","dropped",
   "edited", "enjoyed","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extend","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
-    "indicated","injured", "involved","joked","jumped","kicked","launched",
+    "indicated","injured", "involved","joked","kicked","launched",
   "mixed", "nodded","nursed","observed","operated","organized", "pleased",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
   "reserved","rolled","seized","served","sized","solved", "spoiled","submitted",
@@ -55,9 +55,9 @@ const lftRing = [
 const rightIndex = [
   "anyhow", "anymore", "anyone", "anytime",  "but", "neighborhood", "parenthood","object", 
   "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
-   "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
+   "injury", "injure", "injured", "juice", "juicy",  "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", "alumnus", "alumni", 
-  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump","stumble", "sum", "summary", "summit", "summon", "thumb", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
+  "album", "autumn", "column", "consume",  "dumb", "human","hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum",  "mumble",  "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
 ];
 
 const rightMiddle = [
