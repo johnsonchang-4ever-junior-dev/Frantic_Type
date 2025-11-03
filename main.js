@@ -1,9 +1,9 @@
 // Word lists (same as your document)
 const lftIndex = [
-  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", "strengths", 
-  "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", 
+  "afford", "craft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", "strengths", 
+  "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "scarf", 
   "shaft", "surf", "surface",  "warfare", "waterfall", "after", "afternoon", "afterward", "aircraft", "craft", "draft",
-   "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
+    "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
    "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "cerebral", "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
     "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
@@ -19,27 +19,27 @@ const lftIndex = [
 ];
 
 const lftMiddle_1 = [ 
-  "added","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
-  "charged","cleared","coded","colored","continued", "copied","created","crossed","curved",
+  "added","awarded","based","biked","blessed","breathed", "burned","cared", "sex", 
+  "charged","cleared","colored","continued", "copied","created","crossed",
   "declined", "described","differed","directed","discussed","dropped",
   "edited", "enjoyed","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
-  "extended","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
-    "indicated","injured", "involved","joked","jumped","kicked","launched","lived","loaded", 
-  "mixed", "nodded","nursed","observed","operated","organized","piped", "pleased","priced",
+  "extend","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
+    "indicated","injured", "involved","joked","jumped","kicked","launched",
+  "mixed", "nodded","nursed","observed","operated","organized","piped", "pleased",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
-  "reserved","resolved","rolled","seized","served","sized","solved", "spoiled","struck","submitted","succeeded",
+  "reserved","rolled","seized","served","sized","solved", "spoiled","struck","submitted",
   "supported","swallowed","switched","taxed","transferred", "translated","trapped","traveled","tree", 
-  "tried","triggered","trimmed","troubled","uncovered","united","urged","waved"
+  "tried","trimmed","uncovered","united","urged","waved"
 ];
 
 const lftMiddle_2 = [
   "decade","decide","declare","decor","decrease","dedicate",
   "deduct", "definite","definitely", 
   "degree",
-  "demanded","democracy","democratic","demonstrate","dentist","deny",
+  "democracy","democratic","demonstrate","dentist","deny",
   "depart","depend","dependent","depict","deposit",
   "depth", "description","desert",
-  "deserve","deserved","designer","desirable","desk",
+  "deserve","designer","desirable","desk",
   "desperate","despite","dessert","destroy","detail",
   "detect","detective","determine","develop","device","devise","devote","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
@@ -47,7 +47,7 @@ const lftMiddle_2 = [
   "celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
   "ocean","precede","precedent","precious","precise","precisely","recent",
-  "reception","recipe","receipt","receive","received","receiver"
+  "reception","recipe","receipt","receive","receiver"
 ];
 
 const lftRing = [
@@ -72,7 +72,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equipp","pizza", "jazz", "zucchini", "fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equipp","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber"
 ]
 
 let joined_list = [];
