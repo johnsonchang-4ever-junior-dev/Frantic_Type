@@ -26,7 +26,7 @@ const lftMiddle_1 = [
   "extended","fixed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
   "increased", "indicated","injured", "involved","joked","jumped","kicked","killed","kissed","launched","lived","loaded", 
   "merged","mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
-  "protected","published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed","rendered",
+  "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed","rendered",
   "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","stretched","struck","submitted","succeeded",
   "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","treated", "tree", 
   "treed","tried","triggered","trimmed","troubled","uncovered","united","urged","waved"
