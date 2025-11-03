@@ -20,7 +20,7 @@ const lftIndex = [
 
 const lftMiddle_1 = [ 
   "added","aided","arrived","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
-  "charged","cleared","coded","colored","complained","continued", "copied","covered","created","credited","crossed","curved",
+  "charged","cleared","coded","colored","continued", "copied","created","credited","crossed","curved",
   "decided","declined","decreased", "defined","denied","depended","described","destroyed","differed","directed","discussed","dropped",
   "edited","ended","enjoyed","equipped","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extended","fixed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
@@ -39,11 +39,11 @@ const lftMiddle_2 = [
   "demanded","democracy","democratic","demonstrate","denial","dense","dental","dentist","deny",
   "depart","departed","department","departure","depend","dependent","depending","depict","deployed","deposit",
   "depth","deputy","derived","descend","descended","description","desert",
-  "deserted","deserve","deserved","designer","desirable","desire","desired","desk","despair",
+  "deserted","deserve","deserved","designer","desirable","desire","desk","despair",
   "desperate","despite","dessert","destiny","destroy","detail",
   "detect","detected","detective","determine","determined","develop","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
-  "census","central","century","ceremony","certain","certificate","ceases","ceased",
+  "census","central","century","ceremony","certain","certificate","ceases",
   "celebrated","celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
   "ocean","precede","preceded","precedent","precious","precise","precisely","recent",
@@ -51,7 +51,7 @@ const lftMiddle_2 = [
 ];
 
 const lftRing = [
-  "answered", "swap", "swear", "sweat", "swell", "swept", "swift", "swim",  "swing", "swipe",  "switch",  "sword", "swore", "sworn",
+  "answer", "swap", "swear", "sweat", "swell", "swept", "swift", "swim",  "swing", "swipe",  "switch",  "sword", "swore", "sworn",
   "allows", "arrows", "bows", "brows", "claws", "cows", "crows", "draws", "elbows", "eyebrows", "flows", "follows", "grows", "knows", "laws", "mows", "news", "newspaper", "owes", "paws", "pillows", "plows", "rows", "shadows", "shows", "slows", "snows", "swallows", "throws", "views", "vows", "widows", "windows", "yellows"
 ];
 
@@ -60,7 +60,7 @@ const rightIndex = [
   "inherent", "inherit", "technique", "technology", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", 
-  "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
+  "album", "alum", "aluminum", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
 
 const rightMiddle = [
