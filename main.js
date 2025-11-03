@@ -1,6 +1,6 @@
 // Word lists (same as your document)
 const lftIndex = [
-  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", 
+  "afford", "craft", "crafty", "draft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", "strengths", 
   "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "raft", "scarf", 
   "shaft", "surf", "surface",  "warfare", "waterfall", "wonderful", "after", "afternoon", "afterward", "aircraft", "craft", "crafted", "draft",
    "drafted", "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
@@ -19,7 +19,7 @@ const lftIndex = [
 ];
 
 const lftMiddle_1 = [ 
-  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed", "burned","cared","caused",
+  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed", "burned","cared","caused", "sex", 
   "charged","cleared","coded","colored","complained","composed","continued", "copied","covered","created","credited","crossed","curved",
   "decided","declined","decreased","deed","defined","denied","depended","described","destroyed","differed","directed","discussed","dropped",
   "edited","ended","enjoyed","equipped","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
@@ -60,7 +60,7 @@ const rightIndex = [
   "inherent", "inherit", "technique", "technology", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", 
-  "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurl", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "plump", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
+  "album", "alum", "aluminum", "assume", "assumed", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurl", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
 
 const rightMiddle = [
@@ -72,7 +72,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equipped"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equipped","pizza", "jazz", "zucchini", "fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber"
 ]
 
 let joined_list = [];
