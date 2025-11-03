@@ -1,21 +1,18 @@
 // Word lists (same as your document)
 const lftIndex = [
-  "afford", "craft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", "strengths", 
+  "afford", "craft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", 
   "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "scarf", 
   "shaft", "surf", "surface",  "warfare", "waterfall", "after", "afternoon", "afterward", "aircraft", "craft", "draft",
     "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
    "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "cerebral", "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
-    "rubber", "september", "suburb", "suburban", "timber", "tribe", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
-    "branch", "brand", "brass", "brave", "bravely", "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
+    "rubber", "september", "suburb", "suburban", "timber", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
+    "branch", "brand", "brass", "brave",  "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
     "brick",  "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
-     "ronze", "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", "traitor", 
-  "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
-   "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "collect", 
-   "trash", "trauma",  "traverse",  "treasure", "treasury", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", 
-   "tribute", "trick", "tricky", "trickle",   "trillion", "trim", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
-   "trivial", "troop", "trooper", "trophy", "tropical", "trouble", "trousers", "true", "truly", 
-    "trunk", "trust", "truth",  "breakfast",  "doubt",  "obtain", "subtract", "stretch", "merge"
+    "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", 
+     "collect", 
+    "trauma",  "tribute",  "triumph", 
+    "breakfast",  "doubt",  "obtain", "subtract", "stretch", "merge"
 ];
 
 const lftMiddle_1 = [ 
@@ -27,9 +24,9 @@ const lftMiddle_1 = [
     "indicated","injured", "involved","joked","jumped","kicked","launched",
   "mixed", "nodded","nursed","observed","operated","organized","piped", "pleased",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
-  "reserved","rolled","seized","served","sized","solved", "spoiled","struck","submitted",
-  "supported","swallowed","switched","taxed","transferred", "translated","trapped","traveled","tree", 
-  "tried","trimmed","uncovered","united","urged","waved"
+  "reserved","rolled","seized","served","sized","solved", "spoiled","submitted",
+  "supported","swallowed","switched","taxed", "tree", 
+  "tried","uncovered","united","urged","waved"
 ];
 
 const lftMiddle_2 = [
@@ -40,10 +37,10 @@ const lftMiddle_2 = [
   "depart","depend","dependent","depict","deposit",
   "depth", "description","desert",
   "deserve","designer","desirable","desk",
-  "desperate","despite","dessert","destroy","detail",
+  "desperate","despite","dessert","detail",
   "detect","detective","determine","develop","device","devise","devote","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
-  "census","central","century","ceremony","certain","certificate","ceases",
+  "census","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
   "ocean","precede","precedent","precious","precise","precisely","recent",
@@ -57,22 +54,22 @@ const lftRing = [
 
 const rightIndex = [
   "anyhow", "anymore", "anyone", "anytime",  "but", "neighborhood", "parenthood","object", 
-  "inherent", "inherit", "technique", "technology", "unhinged", "by", "ruby", "hierarchy", 
+  "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", "alumnus", "alumni", 
-  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "trumpet", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
+  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "strike", "striking", "unlike", "kiss", "kills"
+  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
 ];
 
 const rightRing = [
-  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold", "holding", "mold", "old", "oldest", "scolded", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "cloth", "clothe", "clothes", "color", "colored", "colorful",  "deploy", "deployed", "dialogue", "dollar", "ecology", "employee", "explore", "explorer", "flour", "flourish", "follow", "geology", "glorious", "globe", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded",  "lobby", "local", "location", "locker",  "logic", "logical",  "lollipop", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosen", "lord", "lottery", "loudly", "lounge", "loyal", "loyalty", "patrol", "pillow", "plotted", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slowly", "solo", "technology", "theology", "yellow", "zoology"
+  "alcohol", "bold", "old", "oldest", "unfold", "uphold", "biology",  "cloth", "clothe", "color",  "deploy", "dollar",  "employee", "explore", "flour", "ideology", "lobby", "lounge", "loyal",  "patrol", "pillow", "plot", "psychology", "scholar", "scholarship", "solo"
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equipp","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equipp","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol"
 ]
 
 let joined_list = [];
