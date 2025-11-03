@@ -4,7 +4,7 @@ const lftIndex = [
   "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "scarf", 
   "shaft", "surf", "surface",  "warfare", "waterfall", "after", "afternoon", "afterward", "aircraft", "craft", "draft",
     "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
-   "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "cerebral", "disturb", "embraced", "fiber", "harbor",
+   "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
     "rubber", "september", "suburb", "suburban", "timber", "urban", "verbally", "brace", "bracket", "brag",  "brain", "brainy", "brake", 
     "branch", "brand", "brass", "brave",  "bravery", "breach", "bread", "break", "breakfast", "breast", "breath", "breathe", "breeze", "breezy", 
@@ -39,7 +39,7 @@ const lftMiddle_2 = [
   "deserve","designer","desirable","desk",
   "desperate","despite","dessert","detail",
   "detect","detective","determine","develop","device","devise","devote","advocate","broadcast","edicates","medical",
-  "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
+  "medicin","predicted","syndicate","access","ancestor","cell","cement",
   "census","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
@@ -49,7 +49,7 @@ const lftMiddle_2 = [
 
 const lftRing = [
   "answer", "swap", "swear", "sweat", "swell", "swept", "swift", "swim",  "swing", "swipe",  "switch",  "sword", "swore", "sworn",
-  "allows", "arrows", "bows", "brows", "claws", "cows", "crows", "draws", "elbows", "eyebrows", "flows", "follows", "grows", "knows", "laws", "mows", "news", "newspaper", "owes", "paws", "pillows", "plows", "rows", "shadows", "shows", "slows", "snows", "swallows", "throws", "views", "vows", "widows", "windows", "yellows"
+  "allows", "arrows", "bows", "brows", "claws", "cows", "crows", "draws", "elbows", "eyebrows", "flows", "follows", "grows", "knows", "laws", "news", "newspaper", "owes", "paws", "pillows", "plows", "rows", "shadows", "shows", "slows", "snows", "swallows", "throws", "views", "vows", "widows", "windows", "yellows"
 ];
 
 const rightIndex = [
@@ -57,11 +57,11 @@ const rightIndex = [
   "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy", "jump", "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", "alumnus", "alumni", 
-  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt", "hunted", "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
+  "album", "assumed", "assume", "autumn", "column", "consume",  "costume", "datum", "drum", "drummer", "dumb", "forum", "fume", "human", "humanity", "humble", "humbly", "humid", "humidity", "humor",  "hump", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush", "husk", "thumb", "thump", "jump", "jumped", "jumper", "lump", "lumpy", "maximum", "medium", "minimum", "momentum", "mum", "mumble", "mummy", "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb", "number", "numerous", "plumb", "plumber", "premium", "pump", "pumped", "resume",  "rumor", "slum", "slump", "spectrum", "stump", "stumble", "sum", "summary", "summit", "summon", "thumb", "tummy", "tumor", "vacuum", "volume", "yummy", "symbol"
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
+  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
 ];
 
 const rightRing = [
@@ -124,25 +124,84 @@ function createSnowflakeTrail(x, y) {
     setTimeout(() => trail.remove(), 1000);
 }
 
-function getRandomWord() {
-    let word;
-    let attempts = 0;
+
+/* -------------------------------------------------------------
+   NEW Secure & fast random word picker
+   ------------------------------------------------------------- */
+let cryptoRng;          // Uint32Array filled by the Web Crypto API
+let cryptoPos = 0;      // current index inside cryptoRng
+const CRYPTO_BATCH = 256;   // how many random numbers we fetch at once
+
+/** Fill (or refill) the cryptoRng buffer */
+function refillCrypto() {
+    const buf = new Uint32Array(CRYPTO_BATCH);
+    crypto.getRandomValues(buf);
+    cryptoRng = buf;
+    cryptoPos = 0;
+}
+
+/** Return a random integer 0 … max-1 (inclusive) */
+function randInt(max) {
+    if (!cryptoRng || cryptoPos >= cryptoRng.length) refillCrypto();
+
+    // Fisher-Yates unbiased method
+    const cap = 0xFFFFFFFF - (0xFFFFFFFF % max);
+    let r;
     do {
-        word = joined_list[Math.floor(Math.random() * joined_list.length)];
-        attempts++;
-        if (attempts > 50) {
-            usedWords.clear();
-        }
-    } while (usedWords.has(word) && attempts <= 50);
-    
-    usedWords.add(word);
-    if (usedWords.size > 100) {
-        const wordsArray = Array.from(usedWords);
-        usedWords = new Set(wordsArray.slice(-50));
+        r = cryptoRng[cryptoPos++];
+    } while (r >= cap);
+    return r % max;
+}
+
+/** -------------------------------------------------------------
+    NEW getRandomWord()
+    ------------------------------------------------------------- */
+function getRandomWord() {
+    // If the pool of *unused* words is empty → refill it
+    if (usedWords.size === joined_list.length) {
+        usedWords.clear();               // start over
     }
-    
+
+    let index;
+    do {
+        index = randInt(joined_list.length);
+    } while (usedWords.has(joined_list[index]));
+
+    const word = joined_list[index];
+    usedWords.add(word);
+
+    // Keep the “recently-used” cache small (last 50 words)
+    if (usedWords.size > 100) {
+        const recent = Array.from(usedWords).slice(-50);
+        usedWords = new Set(recent);
+    }
+
     return word;
 }
+
+/** -------------------------------------------------------------
+    Old getRandomWord()
+    ------------------------------------------------------------- */
+
+// function getRandomWord() {
+//     let word;
+//     let attempts = 0;
+//     do {
+//         word = joined_list[Math.floor(Math.random() * joined_list.length)];
+//         attempts++;
+//         if (attempts > 50) {
+//             usedWords.clear();
+//         }
+//     } while (usedWords.has(word) && attempts <= 50);
+    
+//     usedWords.add(word);
+//     if (usedWords.size > 100) {
+//         const wordsArray = Array.from(usedWords);
+//         usedWords = new Set(wordsArray.slice(-50));
+//     }
+    
+//     return word;
+// }
 
 function generateWords() {
     generatedWords = [];
