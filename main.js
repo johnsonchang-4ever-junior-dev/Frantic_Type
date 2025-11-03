@@ -64,7 +64,7 @@ const rightIndex = [
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "strike", "striking", "trike", "unlike",
+  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "strike", "striking", "unlike",
 ];
 
 const rightRing = [
