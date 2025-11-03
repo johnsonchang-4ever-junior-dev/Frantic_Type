@@ -146,8 +146,8 @@ function getRandomWord() {
 
 function generateWords() {
     generatedWords = [];
-    // Generate 300 words initially so there's always content
-    for (let i = 0; i < 300; i++) {
+    // Generate 200 words initially so there's always content
+    for (let i = 0; i < 200; i++) {
         generatedWords.push(getRandomWord());
     }
     displayWords();
