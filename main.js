@@ -34,7 +34,7 @@ const lftMiddle_1 = [
 
 const lftMiddle_2 = [
   "decade","decide","declare","decor","decrease","dedicate",
-  "deduct", "defense","defensive","definite","definitely", 
+  "deduct", "definite","definitely", 
   "degree",
   "demanded","democracy","democratic","demonstrate","dentist","deny",
   "depart","depend","dependent","depict","deposit",
