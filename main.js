@@ -13,38 +13,38 @@ const lftIndex = [
   "trace", "track", "tract", "tractor", "trader", "trading", "tradition", "traffic", "tragic", "tragedy", "trail", "trailer",  "trait",
    "transfer", "transform", "transit", "translate", "translation", "transmit", "transparent", "transport", "trap", "collect", 
    "trash", "trauma",  "traverse",  "treasure", "treasury", "tremendous", "trench", "trend", "trendy", "trespass", "trial", "triangle", "tribal", "tribe", 
-   "tribute", "trick", "tricky", "trickle",   "trillion", "trim", "trimmed", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
+   "tribute", "trick", "tricky", "trickle",   "trillion", "trim", "trinity", "trio", "trip", "triple", "tripod", "triumph", "trivia", 
    "trivial", "troop", "trooper", "trophy", "tropical", "trouble", "trousers", "true", "truly", 
-    "trunk", "trust", "truth",  "breakfast",  "doubt",  "obtain", "subtract"
+    "trunk", "trust", "truth",  "breakfast",  "doubt",  "obtain", "subtract", "stretch"
 ];
 
 const lftMiddle_1 = [ 
-  "added","aided","arrived","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
-  "charged","cleared","coded","colored","continued", "copied","created","credited","crossed","curved",
-  "decided","declined","decreased", "defined","denied","depended","described","destroyed","differed","directed","discussed","dropped",
+  "added","aided","awarded","based","believed","biked","blessed","breathed", "burned","cared", "sex", 
+  "charged","cleared","coded","colored","continued", "copied","created","crossed","curved",
+  "decided","declined", "denied","depended","described","differed","directed","discussed","dropped",
   "edited","ended","enjoyed","equipped","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extended","fixed", "forced","gazed","graded","granted","greed","grouped","guarded","guided","helped","hiked","hoped","improved",
-  "increased", "indicated","injured", "involved","joked","jumped","kicked","killed","kissed","launched","lived","loaded", 
+    "indicated","injured", "involved","joked","jumped","kicked","launched","lived","loaded", 
   "merged","mixed","needed","nodded","nursed","observed","operated","organized","piped", "pleased","priced",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed","rendered",
-  "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","stretched","struck","submitted","succeeded",
-  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","treated", "tree", 
-  "treed","tried","triggered","trimmed","troubled","uncovered","united","urged","waved"
+  "reserved","resolved","rolled","seized","served","sized","solved","sounded", "spoiled","struck","submitted","succeeded",
+  "supported","surrounded","swallowed","switched","taxed","transferred", "translated","transported","trapped","traveled","tree", 
+  "tried","triggered","trimmed","troubled","uncovered","united","urged","waved"
 ];
 
 const lftMiddle_2 = [
-  "decade","decay","decent","decide","decision","declare","declared","decor","decrease","dedicate","dedicated","deduce",
+  "decade","decay","decent","decide","decision","declare","decor","decrease","dedicate","dedicated",
   "deduct","defeat", "defend","defense","defensive","defer","define","definite","definitely","definition",
   "degree","delay","delete","deliberate","delicate","deliver", "delivery",
   "demanded","democracy","democratic","demonstrate","denial","dense","dental","dentist","deny",
-  "depart","departed","department","departure","depend","dependent","depending","depict","deployed","deposit",
-  "depth","deputy","derived","descend","descended","description","desert",
-  "deserted","deserve","deserved","designer","desirable","desire","desk","despair",
+  "depart","department","departure","depend","dependent","depending","depict","deployed","deposit",
+  "depth","deputy","descend","descended","description","desert",
+  "deserve","deserved","designer","desirable","desire","desk","despair",
   "desperate","despite","dessert","destiny","destroy","detail",
-  "detect","detected","detective","determine","determined","develop","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medical",
+  "detect","detected","detective","determine","develop","device","devil","devise","devote","devoted","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement","cemetery",
   "census","central","century","ceremony","certain","certificate","ceases",
-  "celebrated","celebrity","concert","eclipse","excel",
+  "celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
   "ocean","precede","preceded","precedent","precious","precise","precisely","recent",
   "reception","recipe","receipt","receive","received","receiver"
@@ -64,11 +64,11 @@ const rightIndex = [
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "strike", "striking", "unlike",
+  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindergarten", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "mike", "nickname",  "spike", "strike", "striking", "unlike", "kiss", "kills"
 ];
 
 const rightRing = [
-  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold", "holding", "mold", "old", "oldest", "scolded", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "cloth", "clothe", "clothes", "color", "colored", "colorful",  "deploy", "deployed", "dialogue", "dollar", "ecology", "employee", "explore", "explorer", "flour", "flourish", "follow", "geology", "glorious", "globe", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded",  "lobby", "local", "located", "locker",  "logic", "logical",  "lollipop", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosen", "lord", "lottery", "loudly", "lounge", "loyal", "loyalty", "patrol", "pillow", "plotted", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slowly", "solo", "technology", "theology", "yellow", "zoology"
+  "alcohol", "bold", "behold", "coldest", "fold", "folder", "gold", "golden", "hold", "holding", "mold", "old", "oldest", "scolded", "soldier", "unfold", "uphold", "alone", "along", "alongside", "aloud", "below", "belonged", "biology", "block", "blond", "bloom", "blossom", "blouse", "blow", "blown", "catalog", "clone", "cloth", "clothe", "clothes", "color", "colored", "colorful",  "deploy", "deployed", "dialogue", "dollar", "ecology", "employee", "explore", "explorer", "flour", "flourish", "follow", "geology", "glorious", "globe", "gloomy", "glossary", "hello", "hollow", "ideology", "loaded",  "lobby", "local", "location", "locker",  "logic", "logical",  "lollipop", "lonely", "loneliness", "long", "longest", "longing", "loop",  "loosen", "lord", "lottery", "loudly", "lounge", "loyal", "loyalty", "patrol", "pillow", "plotted", "prolong", "prolonged", "psychology", "salon", "scholar", "scholarship", "slot", "slowly", "solo", "technology", "theology", "yellow", "zoology"
 ];
 
 const farReached = [ 
