@@ -9,7 +9,7 @@ const lftIndex = [
     "rubber", "september", "suburb", "suburban", "timber", "urban",  "brace", "bracket", "brag",  "brain", "brainy", "brake", 
     "branch", "brand", "brass", "brave",  "bravery", "breach", "bread", "break", "fast", "breast", "breath", "breathe", "breeze", "breezy", 
     "brick",  "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
-    "brook", "broom", "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", 
+    "brook",  "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", 
      "collect", 
     "trauma",  "tribute",  "triumph", 
     "doubt",  "obtain", "subtract", "stretch", "merge"
@@ -22,7 +22,7 @@ const lftMiddle_1 = [
   "edited", "enjoyed","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extend","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
     "indicated","injured", "involved","joked","jumped","kicked","launched",
-  "mixed", "nodded","nursed","observed","operated","organized","piped", "pleased",
+  "mixed", "nodded","nursed","observed","operated","organized", "pleased",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
   "reserved","rolled","seized","served","sized","solved", "spoiled","submitted",
   "supported","swallowed","switched","taxed", "tree", 
@@ -69,7 +69,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe"
 ]
 
 let joined_list = [];
