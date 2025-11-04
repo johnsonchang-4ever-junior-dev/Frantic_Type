@@ -41,7 +41,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1000px;;
     width: 100%;
     margin-top: 100px;
 }
@@ -113,7 +113,7 @@ body {
 
 .timer {
     position: absolute;
-    top: 20px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.5rem;
@@ -125,8 +125,9 @@ body {
 
 .words-container {
     position: relative;
-    height: 8.4rem; /* 3 lines exactly (3 * 2.8rem) */
+    height: 11.2rem; /* 3 lines exactly (3 * 2.8rem) */
     overflow: hidden;
+    padding: 40px;
 }
 
 .words-display {
@@ -166,8 +167,8 @@ body {
 .letter.current::before {
     content: '';
     position: absolute;
-    left: -2px;
-    top: 0;
+    left: 0px;
+    top: 0px;
     bottom: 0;
     width: 2px;
     background: #87ceeb;
@@ -178,9 +179,11 @@ body {
     content: '❄️';
     position: absolute;
     left: -14px;
-    top: -35px;
+    top: -33px;
     font-size: 24px;
     animation: snowflakeBlink 1s infinite;
+    
+
 }
 
 @keyframes cursorBlink {
