@@ -19,7 +19,7 @@ const lftMiddle_1 = [
   "added","awarded","based","biked","blessed","breathed", "burned","cared", "sex", 
   "charged","cleared","colored","continued", "copied","created","crossed",
   "declined", "described","differed","directed","discussed","dropped",
-  "edited", "enjoyed","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
+  "edited","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extend","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
     "indicated","injured", "involved","joked","kicked","launched",
   "mixed", "nodded","nursed","observed","operated","organized", "pleased",
