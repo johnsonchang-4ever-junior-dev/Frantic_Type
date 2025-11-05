@@ -69,7 +69,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please", "whole"
 ]
 
 let joined_list = [];
