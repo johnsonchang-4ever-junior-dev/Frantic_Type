@@ -25,8 +25,7 @@ const lftMiddle_1 = [
   "mixed", "nodded","nursed","observed","operated","organized", "pleased",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
   "reserved","rolled","seized","served","solved", "spoiled","submitted",
-  "supported","swallowed","switched","taxed", "tree", 
-  "tried","uncovered","united","urged","waved"
+  "supported","swallowed","switched","taxed", "tree", "uncovered","united","urged","waved"
 ];
 
 const lftMiddle_2 = [
