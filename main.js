@@ -53,7 +53,7 @@ const lftRing = [
 ];
 
 const rightIndex = [
-  "anyhow", "anymore", "anyone", "anytime",  "but", "neighborhood", "parenthood","object", 
+  "anyhow", "anymore", "anytime", "but", "neighborhood", "parenthood","object", "objective",
   "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy",  "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "union", "alumnus", "alumni", 
