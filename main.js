@@ -56,11 +56,11 @@ const rightIndex = [
   "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy",  "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "under", "alumnus", "alumni", 
-  "album", "autumn", "column", "consume",  "dumb", "human", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum",  "mumble",  "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
+  "album", "autumn", "column", "consume",  "dumb", "human", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hug", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum", "mummy",  "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike",  "hiking", "kind", "kindly", "kindness", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
+  "alike", "bike", "biking", "dislike", "hike", "hiking", "kind", "kindly", "kindness","kid", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
 ];
 
 const rightRing = [
@@ -68,7 +68,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please", "whole", "option", "optimize", "optimism", "opposite", "approval"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please", "whole", "option", "optimize", "optimism", "opposite", "approval", "square", "amazing"
 ]
 
 let joined_list = [];
