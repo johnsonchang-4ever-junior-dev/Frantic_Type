@@ -18,13 +18,13 @@ const lftIndex = [
 const lftMiddle_1 = [ 
   "added","awarded","based","biked","blessed","breathed", "burned","cared", "sex", 
   "charged","cleared","colored","continued", "copied","created","crossed",
-  "declined", "described","differed","directed","discussed","dropped",
+  "declined", "described","differed","directed","discussed","dropped","mopped",
   "edited","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extend","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
     "indicated","injured", "involved","joked","kicked","launched",
   "mixed", "nodded","nursed","observed","operated","organized", "pleased",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
-  "reserved","rolled","seized","served","sized","solved", "spoiled","submitted",
+  "reserved","rolled","seized","served","solved", "spoiled","submitted",
   "supported","swallowed","switched","taxed", "tree", 
   "tried","uncovered","united","urged","waved"
 ];
@@ -56,8 +56,8 @@ const rightIndex = [
   "anyhow", "anymore", "anytime", "but", "neighborhood", "parenthood","object", "objective",
   "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
    "injury", "injure", "injured", "juice", "juicy",  "junior", "jury", "just", "justice", "justify","unusual", "bubble",
-  "judgment", "nurture", "union", "alumnus", "alumni", 
-  "album", "autumn", "column", "consume",  "dumb", "human","hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum",  "mumble",  "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
+  "judgment", "nurture", "under", "alumnus", "alumni", 
+  "album", "autumn", "column", "consume",  "dumb", "human", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hurdle", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum",  "mumble",  "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
 ];
 
 const rightMiddle = [
@@ -69,7 +69,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please", "whole"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please", "whole", "option", "optimize", "optimism", "opposite", "approval"
 ]
 
 let joined_list = [];
