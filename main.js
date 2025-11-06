@@ -17,12 +17,12 @@ const lftIndex = [
 
 const lftMiddle_1 = [ 
   "added","awarded","based","biked","blessed","breathed", "burned","cared", "sex", 
-  "charged","cleared","colored","continued", "copied","created","crossed",
+  "charged","cleared","colored","continued", "copied",
   "declined", "described","differed","directed","discussed","dropped","mopped",
   "edited","exceeded","excited","excused","existed","expected","experienced","explained","explored","expressed",
   "extend","fixed", "forced","gazed","graded","granted","greed","grouped","helped","hiked","hoped","improved",
     "indicated","injured", "involved","joked","kicked","launched",
-  "mixed", "nodded","nursed","observed","operated","organized", "pleased",
+  "mixed", "nodded","nursed","observed","operated", "pleased",
   "published","punched","realized","recognized","referred","reflected","refused", "regretted","relaxed",
   "reserved","rolled","seized","served","solved", "spoiled","submitted",
   "supported","swallowed","switched","taxed", "tree", "uncovered","united","urged","waved"
@@ -32,12 +32,12 @@ const lftMiddle_2 = [
   "decade","decide","declare","decor","decrease","dedicate",
   "deduct", "definite","definitely", 
   "degree",
-  "democracy","democratic","demonstrate","dentist","deny",
-  "depart","depend","dependent","depict","deposit",
+  "democracy","demonstrate","dentist","deny",
+  "depart","depend","dependent","deposit",
   "depth", "description","desert",
   "deserve","designer","desirable","desk",
   "desperate","despite","dessert","detail",
-  "detect", "device","devise","devote","advocate","broadcast","edicates","medical",
+    "device","devise","devote","advocate","broadcast","edicates","medical",
   "medicin","predicted","syndicate","access","ancestor","cell","cement",
   "census","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
@@ -54,7 +54,7 @@ const lftRing = [
 const rightIndex = [
   "anyhow", "anymore", "anytime", "but", "neighborhood", "parenthood","object", "objective",
   "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
-   "injury", "injure", "injured", "juice", "juicy",  "junior", "jury", "just", "justice", "justify","unusual", "bubble",
+    "injury", "injure", "injured", "juice", "juicy",  "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "under", "alumnus", "alumni", 
   "album", "autumn", "column", "consume",  "dumb", "human", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hug", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum", "mummy",  "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
 ];
@@ -68,7 +68,7 @@ const rightRing = [
 ];
 
 const farReached = [ 
-    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please", "whole", "option", "optimize", "optimism", "opposite", "approval", "square", "amaze", "unknown"
+    "squeeze", "breeze", "freeze","rhythm","aqua", "equip","pizza", "jazz", "zucchini", "live","fizz", "embarrass", "squirrel", "bookkeeper", "assassin", "monopoly", "cucumber", "zest", "lol", "pipe", "please", "whole", "option", "optimize", "optimism", "opposite", "approval", "square", "amaze", "unknown", "organize", "crossing", "screen"
 ]
 
 let joined_list = [];
