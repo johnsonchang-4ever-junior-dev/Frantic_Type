@@ -38,7 +38,7 @@ const lftMiddle_2 = [
   "deserve","designer","desirable","desk",
   "desperate","despite","dessert","detail",
     "device","devise","devote","advocate","broadcast","edicates","medical",
-  "medicin","predicted","syndicate","access","ancestor","cell","cement",
+  "medicin","predicted","access","ancestor","cell","cement",
   "census","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
   "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
