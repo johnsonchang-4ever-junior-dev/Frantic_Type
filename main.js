@@ -95,6 +95,9 @@ const timer = document.getElementById('timer');
 const resultScreen = document.getElementById('resultScreen');
 const focusMessage = document.getElementById('focusMessage');
 const snowflakeCursor = document.getElementById('snowflakeCursor');
+const aboutBtn = document.getElementById('aboutBtn');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose = document.getElementById('modalClose');
 
 let mouseX = 0;
 let mouseY = 0;
@@ -418,14 +421,37 @@ document.addEventListener('click', () => {
     focusMessage.classList.add('hidden');
 });
 
-document.addEventListener('keydown', () => {
-    inputField.focus();
-    focusMessage.classList.add('hidden');
+document.addEventListener('keydown', (e) => {
+    // Close modal on Escape key
+    if (e.key === 'Escape' && modalOverlay.classList.contains('show')) {
+        modalOverlay.classList.remove('show');
+        return;
+    }
+    // Focus input field on other keys (but not when modal is open)
+    if (!modalOverlay.classList.contains('show')) {
+        inputField.focus();
+        focusMessage.classList.add('hidden');
+    }
 });
 
 inputField.addEventListener('blur', () => {
     if (testActive) {
         focusMessage.classList.remove('hidden');
+    }
+});
+
+// Modal functionality
+aboutBtn.addEventListener('click', () => {
+    modalOverlay.classList.add('show');
+});
+
+modalClose.addEventListener('click', () => {
+    modalOverlay.classList.remove('show');
+});
+
+modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('show');
     }
 });
 
