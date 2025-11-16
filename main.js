@@ -3,12 +3,12 @@ const lftIndex = [
   "afford", "craft", "drift", "effort", "perfect", "fearful", "grateful", "graft", "handful", "harmful", "helpful", "hopeful", "train", "green", 
   "perform", "performance", "powerful", "prefer", "preferred", "profit", "refresh", "refrain", "refrigerator", "refund", "refuse", "scarf", 
   "shaft", "surf", "surface",  "warfare", "waterfall", "after", "afternoon", "afterward", "aircraft", "craft", "draft",
-    "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "softly", "software", "swift", "swiftly", "theft", "thrift", 
-   "thrifty", "target", "absorb", "arbitrary", "barber", "barbecue", "celebrate",  "disturb", "embraced", "fiber", "harbor",
+    "drift", "drifted", "leftover", "lift", "loft", "lofty", "often", "shift", "soft", "swift", "theft", "thrift", 
+   "thrifty", "target", "absorb", "arbitrary", "barbecue", "celebrate",  "disturb", "embraced", "fiber", "harbor",
     "herb", "herbal", "liberty", "marble", "member", "membership", "neighbor",  "number", "october", "orbit", "remember",  
     "rubber", "september", "suburb", "suburban", "timber", "urban",  "brace", "bracket", "brag",  "brain", "brainy", "brake", 
     "branch", "brand", "brass", "brave",  "bravery", "breach", "bread", "break", "fast", "breast", "breath", "breathe", "breeze", "breezy", 
-    "brick",  "bridge", "brief", "briefly", "bright", "brightly", "brilliant", "bring", "brink", "brisk", "brittle", "broad", "broadly", "broadcast", 
+    "brick",  "bridge", "brief", "bright", "brilliant", "bring", "brink", "brisk", "broad", "broadcast", 
     "brook",  "brought", "brown", "browse",  "bruise", "brush", "brute", "brutal", 
      "collect", 
     "trauma",  "tribute",  "triumph", 
@@ -30,19 +30,19 @@ const lftMiddle_1 = [
 
 const lftMiddle_2 = [
   "decade","decide","declare","decor","decrease","dedicate",
-  "deduct", "definite","definitely", 
+  "deduct", "definite", 
   "degree",
   "democracy","demonstrate","dentist","deny",
   "depart","depend","dependent","deposit",
   "depth", "description","desert",
   "deserve","designer","desirable","desk",
   "desperate","despite","dessert","detail",
-    "device","devise","devote","advocate","broadcast","edicates","medical",
+    "device","devise","devote","advocate","cast","edicates","medical",
   "medicin","predicted","access","ancestor","cell","cement",
   "census","century","ceremony","certain","certificate","ceases",
   "celebrity","concert","eclipse","excel",
-  "excellent","except","exception","excess","excessive","grocery","necessary","necessity",
-  "ocean","precede","precedent","precious","precise","precisely","recent",
+  "excellent","except","excess","excessive","grocery","necessity",
+  "ocean","precede","precedent","precious","precise","recent",
   "reception","recipe","receipt","receive","receiver"
 ];
 
@@ -52,19 +52,18 @@ const lftRing = [
 ];
 
 const rightIndex = [
-  "anyhow", "anymore", "anytime", "but", "neighborhood", "parenthood","object", "objective",
-  "inherent", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
+  "anyhow", "anymore", "anytime", "but", "neighborhood", "parenthood","object", "inherit", "technique", "unhinged", "by", "ruby", "hierarchy", 
     "injury", "injure", "injured", "juice", "juicy",  "junior", "jury", "just", "justice", "justify","unusual", "bubble",
   "judgment", "nurture", "under", "alumnus", "alumni", 
-  "album", "autumn", "column", "consume",  "dumb", "human", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hug", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum", "mummy",  "museum", "mushroom", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
+  "album", "autumn", "column", "consume",  "dumb", "human", "hundred", "hung", "hunger", "hungry", "hunk", "hunt",  "hug", "hurry", "hurt", "hush",  "thumb", "thump", "jump", "jumped", "jumper",  "maximum", "medium",  "momentum", "mummy",  "museum", "mushy", "music", "musical", "musician", "muslim", "must", "mutual", "numb",  "numerous", "plumber", "premium", "pump", "pumped", "resume",  "stumble", "sum", "thumb", "tummy",  "volume",  "symbol"
 ];
 
 const rightMiddle = [
-  "alike", "bike", "biking", "dislike", "hike", "hiking", "kind", "kindly", "kindness","kid", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "liking", "nickname",  "spike", "striking", "unlike", "kiss", "kills"
+  "alike", "bike", "dislike", "hike", "kind", "kindness","kid", "king", "kingdom", "kitchen", "kite", "likely", "likewise", "nickname",  "spike", "unlike", "kiss", "kills"
 ];
 
 const rightRing = [
-  "alcohol", "bold", "old", "oldest", "unfold", "uphold", "biology",  "cloth", "clothe", "color",  "deploy", "dollar",  "employee", "explore", "flour", "ideology", "lobby", "lounge", "loyal",  "patrol", "pillow", "plot", "psychology", "scholar", "scholarship", "solo"
+  "alcohol", "bold", "old", "oldest", "unfold", "uphold", "biology",  "cloth", "clothe", "color",  "deploy", "dollar",  "employee", "explore", "flour", "ideology", "lobby", "lounge", "loyal",  "try", "pillow", "plot", "psychology", "scholar", "scholarship", "solo"
 ];
 
 const farReached = [ 
